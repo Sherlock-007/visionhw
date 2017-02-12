@@ -81,9 +81,9 @@ l1.extend(l4);
 l1.extend(l5);
 dimension=500;
 dataset=dataset.T;
-# u,s,v=linalg.svd(dataset,full_matrices=False);
+u,s,v=linalg.svd(dataset,full_matrices=False);
 # save('a.txt',u);
-u=np.load('a.txt.npy');
+#u=np.load('a.txt.npy');
 print "svd.ok!"
 rr=u[0:dimension,:];
 print rr.shape
